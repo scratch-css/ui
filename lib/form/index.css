@@ -1,36 +1,12 @@
-@import "./config.css";
+/* scratch framework */
+@import '../node_modules/@nikoloza/scratch/lib/index.css';
 
-.field {
-  font-size: var(--h8);
-  font-weight: var(--font-light);
-  text-transform: var(--field-text-transform);
-
-  color: var(--primary);
-  border: 1px solid color(var(--primary) alpha(25%));
-  border-radius: 0;
-
-  margin: var(--gutter-tiny) 0;
-  padding: var(--gutter-tiny) var(--gutter-small);
-  box-sizing: border-box;
-
-  height: var(--field-height);
-  line-height: var(--field-height);
-
-  transition: 0.3s ease;
-  transition-property: border;
-
-  &:hover {
-    border: 1px solid color(var(--primary) alpha(40%));
-  }
-
-  &:focus {
-    border: 1px solid color(var(--primary) alpha(75%));
-  }
-}
-
-/* sizes */
-@import "./sizes.css";
+@import './config.css';
 
 /* types */
-@import "./select.css";
-@import "./textarea.css";
+@import './field.css';
+@import './select.css';
+@import './textarea.css';
+
+/* sizes */
+@import './sizes.css';
