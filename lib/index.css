@@ -1,0 +1,4 @@
+@import '../node_modules/@nikoloza/scratch/lib/config/index.css';
+
+/* form */
+@import "./form/index.css";

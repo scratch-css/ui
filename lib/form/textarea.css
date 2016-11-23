@@ -1,0 +1,22 @@
+.flexible.field {
+  height: auto;
+  line-height: normal;
+
+  padding: var(--gutter-small);
+
+  &.small {
+    padding: var(--gutter-tiny);
+  }
+
+  &.big {
+    padding: var(--gutter);
+  }
+
+  &.large {
+    padding: var(--gutter-big);
+  }
+}
+
+textarea.flexible.field {
+  min-height: 18rem;
+}

@@ -1,0 +1,17 @@
+:root {
+  --field-height-unit: var(--font-unit);
+  --field-height-sequence: var(--font-sequence);
+  --field-height: 4.4rem;
+
+  --field-height-tiny: calc(var(--field-height-small) /
+    var(--field-height-sequence));
+  --field-height-small: calc(var(--field-height) /
+    var(--field-height-sequence));
+  --field-height-big: calc(var(--field-height) *
+    var(--field-height-sequence));
+  --field-height-large: calc(var(--field-height-big) *
+    var(--field-height-sequence));
+
+  --field-font-size: var(--h8);
+  --field-text-transform: uppercase;
+}
