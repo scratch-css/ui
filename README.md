@@ -1,2 +1,2 @@
-# Scratch-UI
-UI set for Scratch framework.
+# Scratch UI
+Scratch UI Components
