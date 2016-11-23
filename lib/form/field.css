@@ -1,27 +1,46 @@
+:root {
+  /* colors */
+  --field-color: var(--primary);
+  --field-color-hover: var(--primary-hover);
+  --field-color-focus: var(--primary-focus);
+
+  /* backgrounds */
+  --field-background: var(--primary-contrast);
+  --field-background-hover: var(--primary-contrast-hover);
+  --field-background-focus: var(--primary-contrast-focus);
+
+  /* borders */
+  --field-border-width: 1px;
+  --field-border-style: solid;
+  --field-border-color: var(--primary);
+  --field-border-color-hover: var(--primary-hover);
+  --field-border-color-focus: var(--primary-focus);
+}
+
 .field {
-  font-size: var(--h8);
   font-weight: var(--font-light);
   text-transform: var(--field-text-transform);
 
-  color: var(--primary);
-  border: 1px solid color(var(--primary) alpha(25%));
+  color: var(--field-color);
+  background: var(--field-background);
+
+  border-style: var(--field-border-style);
+  border-width: var(--field-border-width);
+  border-color: var(--field-border-color);
   border-radius: 0;
 
-  margin: var(--gutter-tiny) 0;
-  padding: var(--gutter-tiny) var(--gutter-small);
-  box-sizing: border-box;
-
-  height: var(--field-height);
-  line-height: var(--field-height);
-
   transition: 0.3s ease;
-  transition-property: border;
+  transition-property: border, color, background;
 
   &:hover {
-    border: 1px solid color(var(--primary) alpha(40%));
+    color: var(--field-color-hover);
+    background: var(--field-background-hover);
+    border-color: var(--field-border-color-hover);
   }
 
   &:focus {
-    border: 1px solid color(var(--primary) alpha(75%));
+    color: var(--field-color-focus);
+    background: var(--field-background-focus);
+    border-color: var(--field-border-color-focus);
   }
 }

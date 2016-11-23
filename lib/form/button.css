@@ -1,0 +1,46 @@
+:root {
+  /* colors */
+  --button-color: var(--primary-contrast);
+  --button-color-hover: var(--primary-contrast-hover);
+  --button-color-focus: var(--primary-contrast-focus);
+
+  /* backgrounds */
+  --button-background: var(--primary);
+  --button-background-hover: var(--primary-hover);
+  --button-background-focus: var(--primary-focus);
+
+  /* borders */
+  --button-border-width: 1px;
+  --button-border-style: solid;
+  --button-border-color: var(--primary);
+  --button-border-color-hover: var(--primary-hover);
+  --button-border-color-focus: var(--primary-focus);
+}
+
+.button {
+  font-weight: var(--font-light);
+  text-transform: var(--field-text-transform);
+
+  color: var(--button-color);
+  background: var(--button-background);
+
+  border-style: var(--button-border-style);
+  border-width: var(--button-border-width);
+  border-color: var(--button-border-color);
+  border-radius: 0;
+
+  transition: 0.3s ease;
+  transition-property: border, color, background;
+
+  &:hover {
+    color: var(--button-color-hover);
+    background: var(--button-background-hover);
+    border-color: var(--button-border-color-hover);
+  }
+
+  &:focus {
+    color: var(--button-color-focus);
+    background: var(--button-background-focus);
+    border-color: var(--button-border-color-focus);
+  }
+}

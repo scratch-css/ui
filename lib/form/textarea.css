@@ -19,4 +19,5 @@
 
 textarea.flexible.field {
   min-height: 18rem;
+  line-height: normal;
 }

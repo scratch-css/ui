@@ -4,6 +4,7 @@
 @import './field.css';
 @import './select.css';
 @import './textarea.css';
+@import './button.css';
 
 /* sizes */
 @import './sizes.css';
