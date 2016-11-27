@@ -53,7 +53,7 @@
     line-height: var(--field-height-large);
   }
 
-  &.full {
+  &.wide {
     width: 100%;
   }
 }
