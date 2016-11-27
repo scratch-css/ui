@@ -18,7 +18,7 @@
 }
 
 .button {
-  font-weight: var(--font-light);
+  font-weight: var(--field-font-weight);
   text-transform: var(--field-text-transform);
 
   color: var(--button-color);

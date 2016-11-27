@@ -24,4 +24,5 @@
   /* text options */
   --field-font-size: var(--h8);
   --field-text-transform: uppercase;
+  --field-font-weight: var(--font-regular);
 }
