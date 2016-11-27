@@ -1,10 +1,15 @@
 /* button sizes */
 .field,
 .button {
+  display: inline-block;
+
   font-size: var(--field-font-size);
 
-  margin: var(--gutter-tiny) 0;
-  padding: var(--gutter-tiny) var(--gutter-small);
+  margin-top: var(--gutter-tiny);
+  margin-bottom: var(--gutter-tiny);
+
+  padding-left: var(--gutter-small);
+  padding-right: var(--gutter-small);
   box-sizing: border-box;
 
   height: var(--field-height);
@@ -13,7 +18,9 @@
   &.tiny {
     font-size: var(--field-font-size-tiny);
 
-    margin: var(--gutter-tiny) 0;
+    margin-top: var(--gutter-tiny);
+    margin-bottom: var(--gutter-tiny);
+
     padding-left: var(--gutter-tiny);
     padding-right: var(--gutter-tiny);
 
@@ -24,7 +31,9 @@
   &.small {
     font-size: var(--field-font-size-small);
 
-    margin: var(--gutter-small) 0;
+    margin-top: var(--gutter-small);
+    margin-bottom: var(--gutter-small);
+
     padding-left: var(--gutter-small);
     padding-right: var(--gutter-small);
 
@@ -35,7 +44,9 @@
   &.big {
     font-size: var(--field-font-size-big);
 
-    margin: var(--gutter-small) 0;
+    margin-top: var(--gutter-small);
+    margin-bottom: var(--gutter-small);
+
     padding-left: var(--gutter);
     padding-right: var(--gutter);
 
@@ -45,7 +56,10 @@
 
   &.large {
     font-size: var(--field-font-size-large);
-    margin: var(--gutter) 0;
+
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+
     padding-left: var(--gutter-big);
     padding-right: var(--gutter-big);
 

@@ -21,8 +21,6 @@
   font-weight: var(--font-light);
   text-transform: var(--field-text-transform);
 
-  line-height: 1 !important;
-
   color: var(--button-color);
   background: var(--button-background);
 

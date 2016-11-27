@@ -1,7 +1,7 @@
 :root {
   /* sequence */
   --field-height-unit: var(--font-unit);
-  --field-height-sequence: var(--major-third);
+  --field-height-sequence: var(--minor-third);
   --field-height: 4.4rem;
 
   /* sizes */
