@@ -6,6 +6,9 @@
 @import './textarea.css';
 @import './button.css';
 
+/* checkbox */
+@import './checkbox.css';
+
 /* sizes */
 @import './sizes.css';
 

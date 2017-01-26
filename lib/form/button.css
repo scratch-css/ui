@@ -15,6 +15,8 @@
   --button-border-color: var(--primary);
   --button-border-color-hover: var(--primary-hover);
   --button-border-color-focus: var(--primary-focus);
+
+  --button-border-radius: 0;
 }
 
 .button {
@@ -27,7 +29,7 @@
   border-style: var(--button-border-style);
   border-width: var(--button-border-width);
   border-color: var(--button-border-color);
-  border-radius: 0;
+  border-radius: var(--button-border-radius);
 
   transition: 0.3s ease;
   transition-property: border, color, background;

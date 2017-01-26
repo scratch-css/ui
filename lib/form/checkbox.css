@@ -1,0 +1,101 @@
+:root {
+  --checkbox-background: var(--whitegray);
+
+  --checkbox-active-background: var(--secondary);
+  --checkbox-active-color: var(--secondary-contrast);
+
+  --checkbox-border-radius: 5px;
+  --checkbox-transition-duration: var(--transition-duration);
+
+  --checkbox-label-color: var(--lightgray);
+  --checkbox-label-active-color: var(--darkgray);
+
+  --checkbox-label-gutter: var(--gutter-small);
+}
+
+.checkbox {
+  line-height: 1;
+
+  > input {
+    display: none;
+  }
+
+  > span {
+    position: relative;
+    color: var(--checkbox-label-color);
+    transition: ease var(--checkbox-transition-duration) color;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      width: var(--field-height);
+      height: var(--field-height);
+      border-radius: var(--checkbox-border-radius);
+      background: var(--checkbox-background);
+      transition: ease var(--checkbox-transition-duration) background;
+    }
+
+    .icon {
+      width: 0;
+      font-size: var(--field-font-size-tiny);
+      margin-left: -calc(var(--field-height) - .85rem);
+      margin-right: calc(1.4em + var(--checkbox-label-gutter));
+      overflow: hidden;
+      transition: ease var(--checkbox-transition-duration);
+      transition-property: width, margin;
+      color: var(--checkbox-active-color);
+    }
+  }
+
+  > input:checked {
+    & + span {
+      color: var(--checkbox-label-active-color);
+
+      &::before {
+        background: var(--checkbox-active-background);
+        color: var(--checkbox-active-color);
+      }
+
+      .icon {
+        width: 1.4em;
+        margin-right: var(--checkbox-label-gutter);
+      }
+    }
+  }
+}
+
+/* sizes */
+.checkbox {
+  &.tiny > span {
+    &::before,
+    &::after {
+      width: var(--field-height-tiny);
+      height: var(--field-height-tiny);
+    }
+  }
+
+  &.small > span {
+    &::before,
+    &::after {
+      width: var(--field-height-small);
+      height: var(--field-height-small);
+    }
+  }
+
+  &.big > span {
+    &::before,
+    &::after {
+      width: var(--field-height-big);
+      height: var(--field-height-big);
+    }
+  }
+
+  &.large > span {
+    &::before,
+    &::after {
+      width: var(--field-height-large);
+      height: var(--field-height-large);
+    }
+  }
+}
