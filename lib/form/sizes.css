@@ -3,7 +3,7 @@
 .button {
   display: inline-block;
 
-  font-size: var(--field-font-size);
+  font-size: 1em;
 
   margin-top: var(--gutter-tiny);
   margin-bottom: var(--gutter-tiny);
@@ -13,7 +13,7 @@
   box-sizing: border-box;
 
   &.tiny {
-    font-size: var(--field-font-size-tiny);
+    /* font-size: var(--field-font-size-tiny); */
 
     margin-top: var(--gutter-tiny);
     margin-bottom: var(--gutter-tiny);
@@ -23,7 +23,7 @@
   }
 
   &.small {
-    font-size: var(--field-font-size-small);
+    /* font-size: var(--field-font-size-small); */
 
     margin-top: var(--gutter-small);
     margin-bottom: var(--gutter-small);
@@ -33,7 +33,7 @@
   }
 
   &.big {
-    font-size: var(--field-font-size-big);
+    /* font-size: var(--field-font-size-big); */
 
     margin-top: var(--gutter-small);
     margin-bottom: var(--gutter-small);
@@ -43,7 +43,7 @@
   }
 
   &.large {
-    font-size: var(--field-font-size-large);
+    /* font-size: var(--field-font-size-large); */
 
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
