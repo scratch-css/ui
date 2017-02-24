@@ -4,7 +4,7 @@
   --field-height-sequence: var(--minor-third);
   --field-height: 2.4rem;
 
-  /* sizes */
+  /* heighs */
   --field-height-tiny: calc(var(--field-height-small) /
     var(--field-height-sequence));
   --field-height-small: calc(var(--field-height) /
@@ -14,15 +14,22 @@
   --field-height-large: calc(var(--field-height-big) *
     var(--field-height-sequence));
 
-  /* sizes */
-  --field-font-size-tiny: var(--h9);
-  --field-font-size-small: var(--h8);
-  --field-font-size: var(--h7);
-  --field-font-size-big: var(--h6);
-  --field-font-size-large: var(--h5);
-
   /* text options */
   --field-font-size: var(--h8);
+  --field-font-size-sequence: var(--font-sequence);
+
+  /* font sizes */
+  --field-font-size-tiny: calc(var(--field-font-size-small) /
+    var(--field-font-size-sequence));
+  --field-font-size-small: calc(var(--field-font-size) /
+    var(--field-font-size-sequence));
+  --field-font-size-big: calc(var(--field-font-size) *
+    var(--field-font-size-sequence));
+  --field-font-size-large: calc(var(--field-font-size-big) *
+    var(--field-font-size-sequence));
+
+  /* font styles */
   --field-text-transform: uppercase;
   --field-font-weight: var(--font-regular);
+  --field-border-radius: 0;
 }

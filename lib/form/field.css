@@ -27,10 +27,17 @@
   border-style: var(--field-border-style);
   border-width: var(--field-border-width);
   border-color: var(--field-border-color);
-  border-radius: 0;
+  border-radius: var(--field-border-radius);
 
   transition: 0.3s ease;
   transition-property: border, color, background;
+
+  &::placeholder {
+    color: color(
+      var(--field-placeholder-color)
+      alpha(var(--field-placeholder-opacity))
+    )
+  }
 
   &:hover {
     color: var(--field-color-hover);

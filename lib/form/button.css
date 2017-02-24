@@ -33,7 +33,7 @@
 
   transition: 0.3s ease;
   transition-property: border, color, background;
-
+/*
   &:hover {
     color: var(--button-color-hover);
     background: var(--button-background-hover);
@@ -44,5 +44,84 @@
     color: var(--button-color-focus);
     background: var(--button-background-focus);
     border-color: var(--button-border-color-focus);
+  } */
+}
+
+/* button colors */
+.button {
+  /* &.primary {
+    background-color: var(--primary);
+    color: var(--primary-contrast);
+
+    &:hover {
+      background-color: var(--primary-hover);
+      color: var(--primary-contrast-hover);
+    }
+
+    &:focus {
+      background-color: var(--primary-focus);
+      color: var(--primary-contrast-focus);
+    }
   }
+
+  &.secondary {
+    background-color: var(--secondary);
+    color: var(--secondary-contrast);
+
+    &:hover {
+      background-color: var(--secondary-hover);
+      color: var(--secondary-contrast-hover);
+    }
+
+    &:focus {
+      background-color: var(--secondary-focus);
+      color: var(--secondary-contrast-focus);
+    }
+  }
+
+  &.tertiary {
+    background-color: var(--tertiary);
+    color: var(--tertiary-contrast);
+
+    &:hover {
+      background-color: var(--tertiary-hover);
+      color: var(--tertiary-contrast-hover);
+    }
+
+    &:focus {
+      background-color: var(--tertiary-focus);
+      color: var(--tertiary-contrast-focus);
+    }
+  }
+
+  &.quaternary {
+    background-color: var(--quaternary);
+    color: var(--quaternary-contrast);
+    border-color:
+
+    &:hover {
+      background-color: var(--quaternary-hover);
+      color: var(--quaternary-contrast-hover);
+    }
+
+    &:focus {
+      background-color: var(--quaternary-focus);
+      color: var(--quaternary-contrast-focus);
+    }
+  }
+
+  &.quinary {
+    background-color: var(--quinary);
+    color: var(--quinary-contrast);
+
+    &:hover {
+      background-color: var(--quinary-hover);
+      color: var(--quinary-contrast-hover);
+    }
+
+    &:focus {
+      background-color: var(--quinary-focus);
+      color: var(--quinary-contrast-focus);
+    }
+  } */
 }
