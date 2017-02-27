@@ -18,6 +18,10 @@
   --field-font-size: var(--h8);
   --field-font-size-sequence: var(--font-sequence);
 
+  /* placeholder */
+  --field-placeholder-color: var(--lightgray);
+  --field-placeholder-opacity: .75;
+
   /* font sizes */
   --field-font-size-tiny: calc(var(--field-font-size-small) /
     var(--field-font-size-sequence));
