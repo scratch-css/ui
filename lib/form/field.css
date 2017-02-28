@@ -16,6 +16,7 @@
   --field-border-color-hover: var(--primary-hover);
   --field-border-color-focus: var(--primary-focus);
 
+  /* placeholder */
   --field-placeholder-color: var(--lightgray);
   --field-placeholder-opacity: .1;
 }
