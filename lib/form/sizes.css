@@ -10,7 +10,13 @@
   box-sizing: border-box;
 
   height: var(--field-height);
-  line-height: var(--field-height);
+  line-height: calc(
+    var(--field-height) *
+    var(--field-line-height-sequence)
+  );
+
+  min-width: var(--field-min-width);
+  max-width: var(--field-max-width);
 
   &.tiny {
     font-size: var(--field-font-size-tiny);
@@ -19,7 +25,10 @@
     padding-right: var(--gutter-tiny);
 
     height: var(--field-height-tiny);
-    line-height: var(--field-height-tiny);
+    line-height: calc(
+      var(--field-height-tiny) *
+      var(--field-line-height-sequence)
+    );
   }
 
   &.small {
@@ -29,7 +38,10 @@
     padding-right: var(--gutter-small);
 
     height: var(--field-height-small);
-    line-height: var(--field-height-small);
+    line-height: calc(
+      var(--field-height-small) *
+      var(--field-line-height-sequence)
+    );
   }
 
   &.big {
@@ -39,7 +51,10 @@
     padding-right: var(--gutter);
 
     height: var(--field-height-big);
-    line-height: var(--field-height-big);
+    line-height: calc(
+      var(--field-height-big) *
+      var(--field-line-height-sequence)
+    );
   }
 
   &.large {
@@ -49,7 +64,10 @@
     padding-right: var(--gutter-big);
 
     height: var(--field-height-large);
-    line-height: var(--field-height-large);
+    line-height: calc(
+      var(--field-height-large) *
+      var(--field-line-height-sequence)
+    );
   }
 
   &.wide {

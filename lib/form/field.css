@@ -9,12 +9,26 @@
   --field-background-hover: var(--primary-contrast-hover);
   --field-background-focus: var(--primary-contrast-focus);
 
+  /* shadows */
+  --field-box-shadow: none;
+
+  /* font styles */
+  --field-text-transform: uppercase;
+  --field-font-weight: var(--font-regular);
+  --field-text-align: left;
+
   /* borders */
   --field-border-width: 1px;
   --field-border-style: solid;
   --field-border-color: var(--primary);
   --field-border-color-hover: var(--primary-hover);
   --field-border-color-focus: var(--primary-focus);
+
+  --field-border-radius: 0;
+
+  /* transitions */
+  --field-transition: var(--transition-duration) ease;
+  --field-transition-property: border, color, background;
 
   /* placeholder */
   --field-placeholder-color: var(--lightgray);
@@ -24,6 +38,7 @@
 .field {
   font-weight: var(--field-font-weight);
   text-transform: var(--field-text-transform);
+  text-align: var(--field-text-align);
 
   color: var(--field-color);
   background: var(--field-background);
@@ -33,8 +48,10 @@
   border-color: var(--field-border-color);
   border-radius: var(--field-border-radius);
 
-  transition: 0.3s ease;
-  transition-property: border, color, background;
+  box-shadow: var(--field-box-shadow);
+
+  transition: var(--field-transition);
+  transition-property: var(--field-transition-property);
 
   &::placeholder {
     color: color(

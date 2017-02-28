@@ -2,7 +2,8 @@
   /* sequence */
   --field-height-unit: var(--font-unit);
   --field-height-sequence: var(--minor-third);
-  --field-height: 2.4rem;
+  --field-height-base: 2.4;
+  --field-height: var(--field-height-base)var(--font-unit);
 
   /* heighs */
   --field-height-tiny: calc(var(--field-height-small) /
@@ -14,13 +15,16 @@
   --field-height-large: calc(var(--field-height-big) *
     var(--field-height-sequence));
 
+  /* line height */
+  --field-line-height-sequence: var(--minor-second);
+
+  /* widths */
+  --field-min-width: 0;
+  --field-max-width: none;
+
   /* text options */
   --field-font-size: var(--h8);
   --field-font-size-sequence: var(--font-sequence);
-
-  /* placeholder */
-  --field-placeholder-color: var(--lightgray);
-  --field-placeholder-opacity: .75;
 
   /* font sizes */
   --field-font-size-tiny: calc(var(--field-font-size-small) /
@@ -31,9 +35,4 @@
     var(--field-font-size-sequence));
   --field-font-size-large: calc(var(--field-font-size-big) *
     var(--field-font-size-sequence));
-
-  /* font styles */
-  --field-text-transform: uppercase;
-  --field-font-weight: var(--font-regular);
-  --field-border-radius: 0;
 }

@@ -9,19 +9,32 @@
   --button-background-hover: var(--primary-hover);
   --button-background-focus: var(--primary-focus);
 
+  /* shadows */
+  --button-box-shadow: var(--field-box-shadow);
+
   /* borders */
-  --button-border-width: 1px;
-  --button-border-style: solid;
+  --button-border-width: var(--field-border-width);
+  --button-border-style: var(--field-border-style);
   --button-border-color: var(--primary);
   --button-border-color-hover: var(--primary-hover);
   --button-border-color-focus: var(--primary-focus);
 
-  --button-border-radius: 0;
+  --button-border-radius: var(--field-border-radius);
+
+  /* font styles */
+  --button-font-weight: var(--field-font-weight);
+  --button-text-transform: var(--field-text-transform);
+  --button-text-align: center;
+
+  /* transitions */
+  --button-transition: var(--field-transition);
+  --button-transition-property: var(--field-transition-property);
 }
 
 .button {
-  font-weight: var(--field-font-weight);
-  text-transform: var(--field-text-transform);
+  font-weight: var(--button-font-weight);
+  text-transform: var(--button-text-transform);
+  text-align: var(--button-text-align);
 
   color: var(--button-color);
   background: var(--button-background);
@@ -31,8 +44,10 @@
   border-color: var(--button-border-color);
   border-radius: var(--button-border-radius);
 
-  transition: 0.3s ease;
-  transition-property: border, color, background;
+  box-shadow: var(--button-box-shadow);
+
+  transition: var(--button-transition);
+  transition-property: var(--button-transition-property);
 /*
   &:hover {
     color: var(--button-color-hover);
@@ -44,84 +59,5 @@
     color: var(--button-color-focus);
     background: var(--button-background-focus);
     border-color: var(--button-border-color-focus);
-  } */
-}
-
-/* button colors */
-.button {
-  /* &.primary {
-    background-color: var(--primary);
-    color: var(--primary-contrast);
-
-    &:hover {
-      background-color: var(--primary-hover);
-      color: var(--primary-contrast-hover);
-    }
-
-    &:focus {
-      background-color: var(--primary-focus);
-      color: var(--primary-contrast-focus);
-    }
-  }
-
-  &.secondary {
-    background-color: var(--secondary);
-    color: var(--secondary-contrast);
-
-    &:hover {
-      background-color: var(--secondary-hover);
-      color: var(--secondary-contrast-hover);
-    }
-
-    &:focus {
-      background-color: var(--secondary-focus);
-      color: var(--secondary-contrast-focus);
-    }
-  }
-
-  &.tertiary {
-    background-color: var(--tertiary);
-    color: var(--tertiary-contrast);
-
-    &:hover {
-      background-color: var(--tertiary-hover);
-      color: var(--tertiary-contrast-hover);
-    }
-
-    &:focus {
-      background-color: var(--tertiary-focus);
-      color: var(--tertiary-contrast-focus);
-    }
-  }
-
-  &.quaternary {
-    background-color: var(--quaternary);
-    color: var(--quaternary-contrast);
-    border-color:
-
-    &:hover {
-      background-color: var(--quaternary-hover);
-      color: var(--quaternary-contrast-hover);
-    }
-
-    &:focus {
-      background-color: var(--quaternary-focus);
-      color: var(--quaternary-contrast-focus);
-    }
-  }
-
-  &.quinary {
-    background-color: var(--quinary);
-    color: var(--quinary-contrast);
-
-    &:hover {
-      background-color: var(--quinary-hover);
-      color: var(--quinary-contrast-hover);
-    }
-
-    &:focus {
-      background-color: var(--quinary-focus);
-      color: var(--quinary-contrast-focus);
-    }
   } */
 }
