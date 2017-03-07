@@ -48,16 +48,4 @@
 
   transition: var(--button-transition);
   transition-property: var(--button-transition-property);
-/*
-  &:hover {
-    color: var(--button-color-hover);
-    background: var(--button-background-hover);
-    border-color: var(--button-border-color-hover);
-  }
-
-  &:focus {
-    color: var(--button-color-focus);
-    background: var(--button-background-focus);
-    border-color: var(--button-border-color-focus);
-  } */
 }
