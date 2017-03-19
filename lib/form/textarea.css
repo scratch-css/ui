@@ -1,4 +1,4 @@
-.flexible.field {
+.flexible.form.field {
   height: auto;
   line-height: normal;
 
@@ -17,7 +17,7 @@
   }
 }
 
-textarea.flexible.field {
+textarea.flexible.form.field {
   min-height: 18rem;
   line-height: normal;
 }
