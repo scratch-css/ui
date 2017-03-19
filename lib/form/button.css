@@ -31,7 +31,7 @@
   --button-transition-property: var(--field-transition-property);
 }
 
-.form.button {
+.ui.form.button {
   font-weight: var(--button-font-weight);
   text-transform: var(--button-text-transform);
   text-align: var(--button-text-align);

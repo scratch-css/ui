@@ -35,7 +35,7 @@
   --field-placeholder-opacity: .1;
 }
 
-.form.field {
+.ui.form.field {
   font-weight: var(--field-font-weight);
   text-transform: var(--field-text-transform);
   text-align: var(--field-text-align);
