@@ -1,2 +1,5 @@
 /* form */
 @import "./form/index.css";
+
+/* label */
+@import "./label.css";

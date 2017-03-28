@@ -1,0 +1,18 @@
+:root {
+  --label-color: var(--midgray);
+  --label-background: var(--whitegray);
+  --label-border-radius: 3px;
+  --label-padding: .35em;
+}
+
+.form.label {
+  display: inline-block;
+  color: var(--label-color);
+  background: var(--label-background);
+  border-radius: var(--label-border-radius);
+  vertical-align: 0;
+  font-size: .9em;
+  margin: 0 .15em;
+  padding: var(--label-padding);
+  line-height: 1;
+}

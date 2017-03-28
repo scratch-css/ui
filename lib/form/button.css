@@ -9,19 +9,32 @@
   --button-background-hover: var(--primary-hover);
   --button-background-focus: var(--primary-focus);
 
+  /* shadows */
+  --button-box-shadow: var(--field-box-shadow);
+
   /* borders */
-  --button-border-width: 1px;
-  --button-border-style: solid;
+  --button-border-width: var(--field-border-width);
+  --button-border-style: var(--field-border-style);
   --button-border-color: var(--primary);
   --button-border-color-hover: var(--primary-hover);
   --button-border-color-focus: var(--primary-focus);
 
-  --button-border-radius: 0;
+  --button-border-radius: var(--field-border-radius);
+
+  /* font styles */
+  --button-font-weight: var(--field-font-weight);
+  --button-text-transform: var(--field-text-transform);
+  --button-text-align: center;
+
+  /* transitions */
+  --button-transition: var(--field-transition);
+  --button-transition-property: var(--field-transition-property);
 }
 
-.button {
-  font-weight: var(--field-font-weight);
-  text-transform: var(--field-text-transform);
+.ui.form.button {
+  font-weight: var(--button-font-weight);
+  text-transform: var(--button-text-transform);
+  text-align: var(--button-text-align);
 
   color: var(--button-color);
   background: var(--button-background);
@@ -31,18 +44,8 @@
   border-color: var(--button-border-color);
   border-radius: var(--button-border-radius);
 
-  transition: 0.3s ease;
-  transition-property: border, color, background;
+  box-shadow: var(--button-box-shadow);
 
-  &:hover {
-    color: var(--button-color-hover);
-    background: var(--button-background-hover);
-    border-color: var(--button-border-color-hover);
-  }
-
-  &:focus {
-    color: var(--button-color-focus);
-    background: var(--button-background-focus);
-    border-color: var(--button-border-color-focus);
-  }
+  transition: var(--button-transition);
+  transition-property: var(--button-transition-property);
 }

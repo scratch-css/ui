@@ -1,6 +1,11 @@
-.flexible.field {
+:root {
+  --textarea-min-height: 18rem;
+  --textarea-min-width: 56rem;
+}
+
+.ui.flexible.form.field {
   height: auto;
-  line-height: normal;
+  line-height: var(--document-line-height);
 
   padding: var(--gutter-small);
 
@@ -17,7 +22,8 @@
   }
 }
 
-textarea.flexible.field {
-  min-height: 18rem;
-  line-height: normal;
+textarea.ui.flexible.form.field {
+  min-height: var(--textarea-min-height);
+  min-width: var(--textarea-min-width);
+  line-height: var(--document-line-height);
 }
