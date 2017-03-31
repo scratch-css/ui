@@ -1,3 +1,52 @@
+:root {
+  /* field error state */
+  --field-error-color: var(--error);
+  --field-error-background-opacity: 10%;
+  --field-error-background: color(var(--error) alpha(var(--field-error-background-opacity)));
+  --field-error-border-color: var(--error);
+
+  /* field warning state */
+  --field-warning-color: var(--warning);
+  --field-warning-background-opacity: 10%;
+  --field-warning-background: color(var(--warning) alpha(var(--field-warning-background-opacity)));
+  --field-warning-border-color: var(--warning);
+}
+
 .ui.form.field:focus:invalid {
   border-color: var(--error);
+}
+
+.ui.form.field:invalid,
+.ui.form.field.error {
+  &,
+  &:hover,
+  &:focus {
+    color: var(--field-error-color);
+    background: var(--field-error-background);
+    border-color: var(--field-error-border-color);
+  }
+
+  &::placeholder {
+    color: color(
+      var(--field-error-color)
+      alpha(var(--field-placeholder-opacity))
+    )
+  }
+}
+
+.ui.form.field.warning {
+  &,
+  &:hover,
+  &:focus {
+    color: var(--field-warning-color);
+    background: var(--field-warning-background);
+    border-color: var(--field-warning-border-color);
+  }
+
+  &::placeholder {
+    color: color(
+      var(--field-warning-color)
+      alpha(var(--field-placeholder-opacity))
+    )
+  }
 }

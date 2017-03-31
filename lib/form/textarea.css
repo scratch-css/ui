@@ -1,6 +1,9 @@
 :root {
-  --textarea-min-height: 18rem;
-  --textarea-min-width: 56rem;
+  --textarea-min-height-base: 18;
+  --textarea-min-height: var(--textarea-min-height-base)var(--unit);
+
+  --textarea-min-width-base: 56;
+  --textarea-min-width: var(--textarea-min-width-base)var(--unit);
 }
 
 .ui.flexible.form.field {

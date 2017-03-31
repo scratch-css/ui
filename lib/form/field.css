@@ -33,6 +33,11 @@
   /* placeholder */
   --field-placeholder-color: var(--lightgray);
   --field-placeholder-opacity: .1;
+
+  /* disabled */
+  --field-disabled-color: var(--lightgray);
+  --field-disabled-background: var(--whitegray);
+  --field-disabled-border-color: var(--lightengray);
 }
 
 .ui.form.field {
@@ -60,15 +65,23 @@
     )
   }
 
-  &:hover {
-    color: var(--field-color-hover);
-    background: var(--field-background-hover);
-    border-color: var(--field-border-color-hover);
+  &:not(:disabled) {
+    &:hover {
+      color: var(--field-color-hover);
+      background: var(--field-background-hover);
+      border-color: var(--field-border-color-hover);
+    }
+
+    &:focus {
+      color: var(--field-color-focus);
+      background: var(--field-background-focus);
+      border-color: var(--field-border-color-focus);
+    }
   }
 
-  &:focus {
-    color: var(--field-color-focus);
-    background: var(--field-background-focus);
-    border-color: var(--field-border-color-focus);
+  &:disabled {
+    color: var(--field-disabled-color);
+    background: var(--field-disabled-background);
+    border-color: var(--field-disabled-border-color);
   }
 }
