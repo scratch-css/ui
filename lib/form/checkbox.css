@@ -39,7 +39,7 @@
     .icon {
       width: 0;
       font-size: var(--field-font-size-tiny);
-      margin-left: -calc(var(--field-height) - .85rem);
+      margin-left: -calc(var(--field-height) - .85var(--unit));
       margin-right: calc(1.4em + var(--checkbox-label-gutter));
       overflow: hidden;
       transition: ease var(--checkbox-transition-duration);

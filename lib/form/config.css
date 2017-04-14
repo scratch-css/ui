@@ -1,9 +1,11 @@
 :root {
+  /* unit */
+  --field-unit: var(--unit);
+
   /* sequence */
-  --field-height-unit: var(--font-unit);
   --field-height-sequence: var(--minor-third);
   --field-height-base: 2.4;
-  --field-height: var(--field-height-base)var(--font-unit);
+  --field-height: var(--field-height-base)var(--field-unit);
 
   /* heighs */
   --field-height-tiny: calc(var(--field-height-small) /
