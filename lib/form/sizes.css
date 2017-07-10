@@ -1,6 +1,6 @@
 /* button sizes */
-.ui.form.field,
-.ui.form.button {
+.ui.field,
+.ui.button {
   display: inline-block;
 
   font-size: var(--field-font-size);

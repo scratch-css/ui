@@ -5,7 +5,7 @@
   --label-padding: .35em;
 }
 
-.form.label {
+.label {
   display: inline-block;
   color: var(--label-color);
   background: var(--label-background);

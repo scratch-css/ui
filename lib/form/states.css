@@ -12,12 +12,12 @@
   --field-warning-border-color: var(--warning);
 }
 
-.ui.form.field:focus:invalid {
+.ui.field:focus:invalid {
   border-color: var(--error);
 }
 
-.ui.form.field:invalid,
-.ui.form.field.error {
+.ui.field:invalid,
+.ui.field.error {
   &,
   &:hover,
   &:focus {
@@ -34,7 +34,7 @@
   }
 }
 
-.ui.form.field.warning {
+.ui.field.warning {
   &,
   &:hover,
   &:focus {

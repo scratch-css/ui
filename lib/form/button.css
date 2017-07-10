@@ -22,6 +22,7 @@
   --button-border-radius: var(--field-border-radius);
 
   /* font styles */
+  --button-letter-spacing: var(--field-letter-spacing);
   --button-font-weight: var(--field-font-weight);
   --button-text-transform: var(--field-text-transform);
   --button-text-align: center;
@@ -31,10 +32,11 @@
   --button-transition-property: var(--field-transition-property);
 }
 
-.ui.form.button {
+.ui.button {
   font-weight: var(--button-font-weight);
   text-transform: var(--button-text-transform);
   text-align: var(--button-text-align);
+  letter-spacing: var(--button-letter-spacing);
 
   color: var(--button-color);
   background: var(--button-background);

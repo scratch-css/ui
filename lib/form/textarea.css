@@ -6,7 +6,7 @@
   --textarea-min-width: var(--textarea-min-width-base)var(--unit);
 }
 
-.ui.flexible.form.field {
+.ui.flexible.field {
   height: auto;
   line-height: var(--document-line-height);
 
@@ -25,7 +25,7 @@
   }
 }
 
-textarea.ui.flexible.form.field {
+textarea.ui.flexible.field {
   min-height: var(--textarea-min-height);
   min-width: var(--textarea-min-width);
   line-height: var(--document-line-height);
