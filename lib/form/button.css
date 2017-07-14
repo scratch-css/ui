@@ -41,6 +41,8 @@
   color: var(--button-color);
   background: var(--button-background);
 
+  user-select: none;
+
   border-style: var(--button-border-style);
   border-width: var(--button-border-width);
   border-color: var(--button-border-color);
