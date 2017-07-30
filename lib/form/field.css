@@ -67,7 +67,7 @@
     )
   }
 
-  &:not(:disabled) {
+  &.interactive:not(:disabled) {
     &:hover {
       color: var(--field-color-hover);
       background: var(--field-background-hover);
