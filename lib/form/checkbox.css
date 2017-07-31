@@ -15,9 +15,14 @@
 
 .ui.checkbox {
   line-height: 1;
+  position: relative;
 
   > input {
-    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
   }
 
   > span {
@@ -39,8 +44,9 @@
     .icon {
       width: 0;
       font-size: var(--field-font-size-tiny);
-      margin-left: -calc(var(--field-height) - .85var(--unit));
-      margin-right: calc(1.4em + var(--checkbox-label-gutter));
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate3d(-50%, -50%, 1px);
       overflow: hidden;
       transition: ease var(--checkbox-transition-duration);
       transition-property: width, margin;
@@ -58,7 +64,7 @@
       }
 
       .icon {
-        width: 1.4em;
+        width: 1.2em;
         margin-right: var(--checkbox-label-gutter);
       }
     }
