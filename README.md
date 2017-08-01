@@ -2,8 +2,8 @@
 Scratch UI CSS basic components. 
 
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/scratch-css/ui)
-[![npm (scoped)](https://img.shields.io/npm/v/@nikoloza/scratch-ui.svg)](https://www.npmjs.com/package/@nikoloza/scratch-ui)
-[![David](https://img.shields.io/david/scratch-css/ui.svg)](https://www.npmjs.com/package/@nikoloza/scratch-ui)
+[![npm (scoped)](https://img.shields.io/npm/v/@scratch-css/ui.svg)](https://www.npmjs.com/package/@scratch-css/ui)
+[![David](https://img.shields.io/david/scratch-css/ui.svg)](https://www.npmjs.com/package/@scratch-css/ui)
 
 Components:
 - form
