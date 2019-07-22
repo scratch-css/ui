@@ -17,7 +17,7 @@
   line-height: 1;
   position: relative;
 
-  > input {
+  & > input {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
@@ -25,7 +25,7 @@
     opacity: 0;
   }
 
-  > span {
+  & > span {
     position: relative;
     color: var(--checkbox-label-color);
     transition: ease var(--checkbox-transition-duration) color;
@@ -41,7 +41,7 @@
       transition: ease var(--checkbox-transition-duration) background;
     }
 
-    .icon {
+    & .icon {
       width: 0;
       font-size: var(--field-font-size-tiny);
       position: absolute;
@@ -54,7 +54,7 @@
     }
   }
 
-  > input:checked {
+  & > input:checked {
     & + span {
       color: var(--checkbox-label-active-color);
 
