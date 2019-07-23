@@ -1,32 +1,26 @@
 {
   "name": "@scratch-css/ui",
   "version": "1.0.2",
-  "description": "",
   "main": "lib/index.css",
   "scripts": {
     "start": "parcel index.html --no-cache",
-    "build": "parcel build index.html",
-    "deploy": "yarn build && gh-pages -d dist"
+    "build": "parcel build index.html"
   },
-  "author": "",
-  "license": "",
   "dependencies": {
-    "@scratch-css/scratch": "^1.0.0"
+    "@scratch-css/scratch": "^1.0.2"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
     "parcel-bundler": "^1.12.3",
     "postcss-preset-env": "^6.7.0"
   },
-  "browserslist": [
-    "last 1 version",
-    "> 1%"
-  ],
   "postcss": {
     "plugins": {
       "postcss-preset-env": {
         "stage": 0
       }
     }
-  }
+  },
+  "browserslist": [
+    "> 0%"
+  ]
 }

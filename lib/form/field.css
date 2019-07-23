@@ -13,7 +13,7 @@
   --field-box-shadow: none;
 
   /* font styles */
-  --field-text-transform: uppercase;
+  --field-text-transform: none;
   --field-font-weight: var(--font-regular);
   --field-text-align: left;
   --field-letter-spacing: 0;
