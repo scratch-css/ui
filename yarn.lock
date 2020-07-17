@@ -770,10 +770,10 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@scratch-css/scratch@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@scratch-css/scratch/-/scratch-1.0.1.tgz#8b487e800c54b9e474e4b295969dcb5987a3d616"
-  integrity sha512-AMzM7W8AgrIVanWdK17vQBTnqsC1cT0g4JlbgWfddQfBPDTEhT+ust/DHYOQ7AJmgI22v7ViwU4PLI8PFV/4jw==
+"@scratch-css/scratch@scratch-css/scratch":
+  version "2.0.1"
+  uid "607bf4a21c511eb6e3b66867233aab91bcf8e9a4"
+  resolved "https://codeload.github.com/scratch-css/scratch/tar.gz/607bf4a21c511eb6e3b66867233aab91bcf8e9a4"
 
 "@types/q@^1.5.1":
   version "1.5.2"
@@ -3092,9 +3092,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.4:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@^2.2.0:
   version "2.2.0"
